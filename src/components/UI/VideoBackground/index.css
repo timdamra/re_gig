@@ -1,0 +1,32 @@
+.gig-video {
+  object-fit: cover;
+  width: 100vw;
+  height: 40vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.gig-video__header {
+  position: relative;
+  height: 20vh;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.gig-video__header h4 {
+  font-family: 'Shanti', sans-serif;
+  color: white;
+  font-weight: 200;
+  font-size: 16px;
+  width: 60%;
+}
+
+.gig-video__logo {
+  margin-top: 36px;
+  height: 64px;
+  width: 102px;
+}

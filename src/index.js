@@ -1,15 +1,8 @@
-import React, { Component } from 'react'
+import React from 'react'
 import { render } from 'react-dom'
 
-class App extends Component {
-  render = () => {
-    return (
-      <div>
-        Testing
-      </div>
-    )
-  }
-}
+import App from 'components/App'
+import './index.css'
 
 render(
   <App />,
