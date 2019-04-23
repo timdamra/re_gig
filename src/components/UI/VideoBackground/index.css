@@ -1,7 +1,7 @@
 .gig-video {
   object-fit: cover;
   width: 100vw;
-  height: 40vh;
+  height: 60vh;
   position: fixed;
   top: 0;
   left: 0;
@@ -9,7 +9,7 @@
 
 .gig-video__header {
   position: relative;
-  height: 20vh;
+  height: 30vh;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -28,5 +28,22 @@
 .gig-video__logo {
   margin-top: 36px;
   height: 64px;
-  width: 102px;
+  width: 128px;
+}
+
+.gig-video__buttons-container {
+  width: 75%;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+@media screen and (min-width: 1024px) {
+  .gig-video__header {
+    height: 24vh;
+  }
+  .gig-video__buttons-container {
+    width: 50%;
+  }
 }
