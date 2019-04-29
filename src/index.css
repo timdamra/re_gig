@@ -29,9 +29,20 @@ margin: auto;
 margin-top: 18vh;
 }
 
+.gig-container {
+  position: relative;
+  top: 40vh;
+}
+
 footer {
 background-color: navy;
 color: white;
 flex-shrink: 0;
 display: flex;
+}
+
+@media screen and (min-width: 1024px) {
+  .gig-container {
+    top: 40vh;
+  }
 }
