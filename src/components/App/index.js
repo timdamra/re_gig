@@ -1,14 +1,16 @@
 import React, { Component, Fragment } from 'react'
 
-import VideoBackground from 'components/UI/VideoBackground'
+import VidPlayer from 'components/UI/VideoBackground/test'
 import PostingList from 'components/UI/PostingList'
+import Footer from 'components/UI/Footer'
 
 class App extends Component {
   render = () => {
     return (
       <Fragment>
-        <VideoBackground />
+        <VidPlayer  />
         <PostingList className="gig-container" />
+        <Footer />
       </Fragment>
     )
   }

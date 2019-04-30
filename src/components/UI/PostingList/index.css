@@ -3,16 +3,12 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  position: relative;
-  top: 24vh;
-  padding: 8px 4px;
+  padding: 4px;
   list-style-type: none;
   padding: 0;
-  margin-top: 0;
+  margin-top: 12px;
 }
 
 .gig-postings-list__header {
   text-align: center;
-  position: relative;
-  top: 22vh;
 }

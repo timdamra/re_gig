@@ -6,8 +6,9 @@ import classNames from 'classnames'
 
 const styles = theme => ({
   plainButton: {
-    border: '1px solid black',
     maxWidth: '45%',
+    color: 'white',
+    fontSize: '14px',
     [theme.breakpoints.up('md')]: {
       border: '1px solid white',
       fontSize: '18px',
