@@ -1,4 +1,5 @@
 import React, { Component, Fragment } from 'react'
+import PropTypes from 'prop-types'
 import PostingCard from 'components/UI/PostingCard'
 
 import './index.css'
@@ -12,15 +13,12 @@ class PostingList extends Component {
           subHeader: 'Hire me'
         },
         cardMedia: {
-          image: "https://img-aws.ehowcdn.com/600x600p/s3-us-west-1.amazonaws.com/contentlab.studiod/getty/dcb0e505f8e6411b94f8b369bc761ae7.jpg",
+          image:
+            'https://img-aws.ehowcdn.com/600x600p/s3-us-west-1.amazonaws.com/contentlab.studiod/getty/dcb0e505f8e6411b94f8b369bc761ae7.jpg',
           title: 'sample'
         },
         cardContent: {
-          typography: [
-            'I do plumbing',
-            'Electric',
-            'gardening'
-          ]
+          typography: ['I do plumbing', 'Electric', 'gardening']
         }
       },
       {
@@ -29,15 +27,12 @@ class PostingList extends Component {
           subHeader: 'Hire me'
         },
         cardMedia: {
-          image: "https://img-aws.ehowcdn.com/600x600p/s3-us-west-1.amazonaws.com/contentlab.studiod/getty/dcb0e505f8e6411b94f8b369bc761ae7.jpg",
+          image:
+            'https://img-aws.ehowcdn.com/600x600p/s3-us-west-1.amazonaws.com/contentlab.studiod/getty/dcb0e505f8e6411b94f8b369bc761ae7.jpg',
           title: 'sample'
         },
         cardContent: {
-          typography: [
-            'I do plumbing',
-            'Electric',
-            'gardening'
-          ]
+          typography: ['I do plumbing', 'Electric', 'gardening']
         }
       }
     ]
@@ -50,16 +45,20 @@ class PostingList extends Component {
         <ul className="gig-postings-list__container">
           {postings.map((posting, idx) => {
             return (
-              <li style={{ paddingBottom: '12px' }} key={`home-postings-${idx}`}>
-                <PostingCard
-                  posting={posting}
-                />
+              <li
+                style={{ paddingBottom: '12px' }}
+                key={`home-postings-${idx}`}
+              >
+                <PostingCard posting={posting} />
               </li>
             )
           })}
         </ul>
       </Fragment>
     )
+  }
+  static propTypes = {
+    postings: PropTypes.array
   }
 }
 

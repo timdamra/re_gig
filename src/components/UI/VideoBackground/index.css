@@ -36,8 +36,9 @@
 }
 
 .gig-video__buttons-container {
-  width: 75%;
+  width: 100%;
   margin: auto;
+  margin-top: 12px;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
